@@ -144,3 +144,48 @@ footer a {
   font-weight: bold;
   transition: color 0.3s ease;
 }
+
+/* MAPA */
+
+#mapa {
+  width: 70%;
+  height: 70vh;
+  border: 0px;
+}
+
+/* FIELD SET CONTACTO */
+#fieldset {
+  margin-top: 10px;
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#legend {
+  width: auto;
+  padding: 0 5px;
+  font-size: 18px;
+}
+
+/* FORMULARIO */
+#textarea {
+  margin-top: 5px;
+  width: 75%;
+  height: 120px;
+  padding: 7px 7px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+form {
+  font-size: 18px;
+}
+
+#correo {
+  width: 180px;
+}
