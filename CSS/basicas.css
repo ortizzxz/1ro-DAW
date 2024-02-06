@@ -1,0 +1,98 @@
+/* • Reglas básicas: se establecen los estilos por defecto de los elementos HTML individuales, 
+los típicos selectores CSS de tipo. Por ejemplo, html, body, button, h1, etc */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  /* Direccion de la imagen  */
+  background-image: url(../Imagenes/f2.jpg);
+
+  /* Ajustar la forma en que la imagen se muestra en el fondo */
+  background-size: cover;
+
+  /* Centrar la imagen en el fondo */
+  background-position: bottom;
+
+  /* Fijar la imagen para que no se desplace con el contenido */
+  background-attachment: fixed;
+
+  /* Establecer un color de fondo en caso de que la imagen no se cargue o no cubra toda la pantalla */
+  background-color: #7e7e7e;
+
+  text-align: center;
+}
+
+#titulo {
+  margin-top: 15px;
+}
+
+/* HEADER */
+header {
+  color: #fff;
+  padding: 10px;
+  padding-top: 5px;
+  justify-content: center;
+  display: flex;
+}
+
+.carrusel-item {
+  padding: 20px; /* Agrega un espacio alrededor del contenido */
+  text-align: justify; /* Justificar el texto para un aspecto más limpio */
+}
+
+div h1,
+h2 {
+  text-align: center;
+}
+
+div p {
+  line-height: 1.6; /* Controla la altura de línea para mejorar la legibilidad */
+}
+
+div li {
+  line-height: 1.6; /* Controla la altura de línea en los elementos de la lista */
+}
+
+.carrusel-item {
+  flex: 0 0 100%; /* Cada item ocupa el 100% del ancho */
+  transition: transform 30s ease; /* Animación de transición para el efecto */
+  display: flex;
+  text-align: center;
+  animation: carrusel-animation 25s infinite;
+}
+
+.contenidocarrusel {
+  width: 100%; /* Ancho del contenido ajustable según tus necesidades */
+  margin: 0 auto; /* Centra horizontalmente el contenido */
+}
+
+.contenidocarrusel h1,
+h2 {
+  text-align: center;
+  padding: 5px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.contenidocarrusel p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 20px;
+  padding: 3px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
