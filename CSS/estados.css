@@ -1,34 +1,7 @@
 /* • Reglas de estados: se define el comportamiento del layout y sus módulos en diferentes estados: hover, link, visited, diferentes resoluciones, etc.  */
 
-nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
+/* Animacion del Carrusel */
 
-nav li {
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #ffcc00; /* Cambiar el color al pasar el ratón sobre el enlace */
-}
-
-.carrusel-container {
-  display: flex;
-  overflow: hidden;
-  width: 100%; /* Asegúrate de que el carrusel ocupe el 100% del ancho */
-}
-
-/* Establece la posición inicial y la animación para los elementos */
 .carrusel-item:nth-child(1) {
   transform: translateX(0);
 }
@@ -57,10 +30,29 @@ nav a:hover {
   }
 }
 
+/* Links  */
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:visited {
+  color: white;
+}
+
+/* Efectos Hover  */
+
 .porque:hover,
 .somos:hover,
 .racing:hover {
-  color: #ffcc00; /* Cambiar el color al pasar el ratón sobre el enlace */
+  color: #ffcc00;
+  filter: blur(0px);
   transition: color 0.6s ease;
   cursor: pointer;
+}
+
+a:hover {
+  color: #ffcc00;
 }

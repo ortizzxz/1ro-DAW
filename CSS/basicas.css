@@ -1,31 +1,37 @@
 /* • Reglas básicas: se establecen los estilos por defecto de los elementos HTML individuales, 
 los típicos selectores CSS de tipo. Por ejemplo, html, body, button, h1, etc */
 
+/* Generales */
 * {
   margin: 0px;
   padding: 0px;
 }
 
 body {
-  /* Direccion de la imagen  */
   background-image: url(../Imagenes/fondo.jpg);
-
-  /* Ajustar la forma en que la imagen se muestra en el fondo */
   background-size: 30%;
-
-  /* Centrar la imagen en el fondo */
   background-position: inherit;
-
-  /* Fijar la imagen para que no se desplace con el contenido */
   background-attachment: fixed;
-
-  /* Establecer un color de fondo en caso de que la imagen no se cargue o no cubra toda la pantalla */
   background-color: black;
-
   text-align: center;
   position: relative;
+  color: white;
 }
 
+/* Barra de navegacion */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+/* H1 TITULO PRINCIPAL */
 #titulo {
   margin-top: 15px;
 }
@@ -39,24 +45,18 @@ header {
   display: flex;
 }
 
+/* Carrusel */
+
+.carrusel-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%; /* Asegúrate de que el carrusel ocupe el 100% del ancho */
+}
+
 .carrusel-item {
   padding: 20px; /* Agrega un espacio alrededor del contenido */
   text-align: justify; /* Justificar el texto para un aspecto más limpio */
 }
-
-div h1,
-h2 {
-  text-align: center;
-}
-
-div p {
-  line-height: 1.6; /* Controla la altura de línea para mejorar la legibilidad */
-}
-
-div li {
-  line-height: 1.6; /* Controla la altura de línea en los elementos de la lista */
-}
-
 .carrusel-item {
   flex: 0 0 100%; /* Cada item ocupa el 100% del ancho */
   transition: transform 30s ease; /* Animación de transición para el efecto */
@@ -84,19 +84,22 @@ h2 {
   text-align: center;
 }
 
-footer p {
-  font-size: 20px;
-  padding: 3px;
-  margin-top: 15px;
-  margin-bottom: 5px;
+/* EFECTOS DIVS */
+
+div h1,
+h2 {
+  text-align: center;
 }
 
-footer a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  transition: color 0.3s ease;
+div p {
+  line-height: 1.6; /* Controla la altura de línea para mejorar la legibilidad */
 }
+
+div li {
+  line-height: 1.6; /* Controla la altura de línea en los elementos de la lista */
+}
+
+/* DIVS PRINCIPALES INDEX.HTML  */
 
 .container {
   display: flex; /* Utilizamos flexbox */
@@ -124,4 +127,20 @@ footer a {
 .porque,
 .somos {
   height: fit-content;
+}
+
+/* FOOTER */
+
+footer p {
+  font-size: 20px;
+  padding: 3px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
