@@ -119,3 +119,9 @@ footer a {
   padding: 10px;
   font-size: 17px;
 }
+
+.racing,
+.porque,
+.somos {
+  height: fit-content;
+}
