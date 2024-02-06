@@ -96,3 +96,16 @@ footer a {
   font-weight: bold;
   transition: color 0.3s ease;
 }
+
+.container {
+  display: flex; /* Utilizamos flexbox */
+  height: 100vh; /* Hacemos que la altura sea del 100% del viewport */
+}
+
+.somos,
+.racing {
+  flex: 1;
+}
+
+.porque {
+}
