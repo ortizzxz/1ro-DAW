@@ -23,24 +23,24 @@ body {
 .carrusel-container {
   display: flex;
   overflow: hidden;
-  width: 100%; /* Asegúrate de que el carrusel ocupe el 100% del ancho */
+  width: 100%;
 }
 
 .carrusel-item {
-  padding: 20px; /* Agrega un espacio alrededor del contenido */
-  text-align: justify; /* Justificar el texto para un aspecto más limpio */
+  padding: 10px 0px 10px 0px;
+  text-align: justify;
 }
 .carrusel-item {
-  flex: 0 0 100%; /* Cada item ocupa el 100% del ancho */
-  transition: transform 30s ease; /* Animación de transición para el efecto */
+  flex: 0 0 100%;
+  transition: transform 30s ease;
   display: flex;
   text-align: center;
   animation: carrusel-animation 20s infinite;
 }
 
 .contenidocarrusel {
-  width: 100%; /* Ancho del contenido ajustable según tus necesidades */
-  margin: 0 auto; /* Centra horizontalmente el contenido */
+  width: 100%;
+  margin: 0 auto;
 }
 
 .contenidocarrusel h1,
