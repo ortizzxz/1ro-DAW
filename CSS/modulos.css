@@ -1,1 +1,18 @@
 /* • Reglas de módulos: elementos que pueden ser reusables, modulares e independientes del contexto. Por ejemplo: barras de navegación o galerías de imágenes.  */
+/* Barra de navegacion */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+/* H1 TITULO PRINCIPAL */
+#titulo {
+  margin-top: 15px;
+}
