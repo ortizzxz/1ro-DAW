@@ -89,7 +89,7 @@ public class PruebaMaquina {
     }      
     //==========================================================================       
     
-    
+    //
     static void mostrarMaquinaCreada (Maquina artefacto) {
         System.out.printf ("Máquina creada %s\n", 
                 contenidoMaquina (artefacto));        
