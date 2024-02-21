@@ -12,18 +12,32 @@ public final class Molino extends MaquinaMecanica{
     //atributo 
     private TipoMolino tipoDeMolino;
     
-    
+    /**
+     * Constructor de la clase Molino
+     * @param marca String para asignar la Marca
+     * @param modelo String para asignar el Modelo
+     * @param fuerzaMotriz Fuerza para asignar el tipo de fuerza motriz
+     */
     public Molino(String marca, 
                   String modelo, 
                   Fuerza fuerzaMotriz) {
         super(marca, modelo, fuerzaMotriz);
     }
 
+    /**
+     * Metodo para obtener el tipo de molino
+     * @return TipoDeMolino con el tipo de molino de este molino
+     */
     public TipoMolino getTipoDeMolino() {
         return tipoDeMolino;
     }   
     
-//{ Marca: <texto10>; modelo: <texto10>; NS: <número4>; Fuerza Motriz: <texto10>; Molino de: <texto18> }
+    /**
+     * Metodo para obtener una cadena de texto con los datos de la clase 
+     * Bicicleta
+     * @return String de tipo ToString con los datos de la Clase más los datos
+     * de la clase del Padre.
+     */
     @Override
     public String toString() {
         String salida = super.toString();
@@ -31,10 +45,4 @@ public final class Molino extends MaquinaMecanica{
         
         return salida + String.format(" Molino de: %18s }", tipoDeMolino);
     }
-    
-    
 }
-
-//Crea un constructor con los parámetros marca, modelo, fuerzaMotriz.
-//Crea el método "get": tipoDeMolino
-//Sobreescribe el método toString() para que imprima los datos de la máquina con el siguiente formato:

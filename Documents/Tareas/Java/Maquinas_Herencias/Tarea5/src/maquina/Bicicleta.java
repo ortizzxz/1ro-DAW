@@ -21,6 +21,13 @@ public final class Bicicleta extends MaquinaMecanica{
                                                              //que se puede desplazar una bicicleta sin hacer paradas
 
 //Crea un constructor con todos los parámetros: marca, modelo, radioRueda (Se establede Fuerza.Animal con valor necesesario)
+
+    /**
+     * Constructor completo de la clase Bicicleta
+     * @param marca String para asignar la Marca
+     * @param modelo String para asignar el Modelo
+     * @param radioRueda Double para asignar el radio de la rueda
+     */
     public Bicicleta(String marca, 
                      String modelo,
                      double radioRueda){
@@ -29,20 +36,40 @@ public final class Bicicleta extends MaquinaMecanica{
         this.radioRueda = radioRueda;
     }
     
+    /**
+     * Constructor de la clase Bicicleta sin el parámetro "radioRueda"
+     * @param marca String para asignar la Marca
+     * @param modelo String para asignar el Modelo
+     */
     public Bicicleta(String marca, 
                      String modelo){
         
         super(marca, modelo);
     }
 
+    /**
+     * Metodo para obtener el radio de la rueda.
+     * @return Double con el tamaño del radio de la rueda
+     */
     public double getRadioRueda() {
         return radioRueda;
     }
 
+    /**
+     * Metodo para obtener el total de kilometros
+     * @return Double con el total de kilometros 
+     */
     public double getTotalKilometros() {
         return totalKilometros;
     }
 
+    
+    /**
+     * Metodo para obtener una cadena de texto con los datos de la clase 
+     * Bicicleta
+     * @return String de tipo ToString con los datos de la Clase más los datos
+     * de la clase del Padre.
+     */
     @Override
     public String toString() {
         String salida = super.toString();

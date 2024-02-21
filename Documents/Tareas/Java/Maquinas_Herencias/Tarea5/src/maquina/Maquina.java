@@ -26,25 +26,42 @@ public abstract class Maquina {
         cantidadDeMaquinasFabricadas++;
     }
 
+    /**
+     * Metodo para obtener la marca de la maquina 
+     * @return String con la marca de la maquina indicada
+     */
     public String getMarca() {
         return marca;
     }
 
+    /**
+     * Metodo para obtener el modelo de la maquina 
+     * @return String con el modelo de la maquina indicada
+     */
     public String getModelo() {
         return modelo;
     }
 
+    /**
+     * Metodo para obtener el numero de serie de la maquina
+     * @return Entero con el numero de serie de la maquina
+     */
     public int getNumeroDeSerie() {
         return numeroDeSerie;
     }
 
+    /**
+     * Metodo para obtener la cantidad de maquinas fabricadas
+     * @return Entero con la cantidad de maquinas fabricadas
+     */
     public int getCantidadDeMaquinasFabricadas() {
         return cantidadDeMaquinasFabricadas;
     }
-    
-    //Sobreescribe el método toString() para que imprima los datos de la máquina con el siguiente formato:
-    //{ Marca: <texto10>; modelo: <texto10>; NS: <número4> }
-    
+
+    /**
+     * Metodo para obtener una cadena de texto con los datos de la clase Maquina
+     * @return String de tipo ToString con los datos de la Clase
+     */
     @Override
     public String toString() {
         return String.format("{ Marca: %10s; Modelo %10s; NS: %4d; }" ,marca,  modelo , numeroDeSerie);
