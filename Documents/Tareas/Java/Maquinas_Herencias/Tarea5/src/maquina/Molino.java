@@ -22,6 +22,27 @@ public final class Molino extends MaquinaMecanica{
                   String modelo, 
                   Fuerza fuerzaMotriz) {
         super(marca, modelo, fuerzaMotriz);
+        
+        //swtich para asignar tipo de molino dependiendo de la fuerzamotriz 
+        switch(fuerzaMotriz){
+            case ANIMAL: 
+                this.tipoDeMolino = TipoMolino.FUERZA_ANIMAL;
+                break;
+            case ELECTRICIDAD: 
+                this.tipoDeMolino = TipoMolino.ELECTRICO;
+                break;
+            case COMBUSTIBLE: 
+                this.tipoDeMolino = TipoMolino.A_MOTOR_COMBUSTION;
+                break;
+            case VIENTO: 
+                this.tipoDeMolino = TipoMolino.DE_VIENTO;
+                break;
+            case CORRIENTE_AGUA: 
+                this.tipoDeMolino = TipoMolino.DE_AGUA;
+                break;
+            default:
+                break;
+        }
     }
 
     /**
