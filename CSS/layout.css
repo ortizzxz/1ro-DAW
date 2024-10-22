@@ -1,0 +1,27 @@
+/* • Reglas del layout: se divide la página en secciones (header, main content, footer, navigation, 
+etc.) y se asignan los estilos relacionados con su estructura. La siguiente página indica los tipos de layout que puedes usar en tu diseño para estructurarla: http://dis.um.es/~lopezquesada/documentos/IES_1213/LMSGI/curso/UT5/libroswebcss/www.librosweb.es/css/capitulo12/estructura_o_layout.html  */
+
+/* HEADER */
+header {
+  color: #fff;
+  padding: 10px;
+  padding-top: 5px;
+  justify-content: center;
+  display: flex;
+}
+
+/* FOOTER */
+
+footer p {
+  font-size: 20px;
+  padding: 3px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}

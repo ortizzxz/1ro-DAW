@@ -1,0 +1,152 @@
+/* • Reglas básicas: se establecen los estilos por defecto de los elementos HTML individuales, 
+los típicos selectores CSS de tipo. Por ejemplo, html, body, button, h1, etc */
+
+/* Generales */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url(../Imagenes/fondo.jpg);
+  background-size: 30%;
+  background-position: inherit;
+  background-attachment: fixed;
+  background-color: black;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+/* Carrusel */
+
+.carrusel-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carrusel-item {
+  padding: 10px 0px 10px 0px;
+  text-align: justify;
+}
+.carrusel-item {
+  flex: 0 0 100%;
+  transition: transform 30s ease;
+  display: flex;
+  text-align: center;
+  animation: carrusel-animation 20s infinite;
+}
+
+.contenidocarrusel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contenidocarrusel h1,
+h2 {
+  text-align: center;
+  padding: 5px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.contenidocarrusel p {
+  line-height: 1.6;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.pcarrusel {
+  font-size: 20px;
+}
+
+/* EFECTOS DIVS */
+
+div h1,
+h2 {
+  text-align: center;
+}
+
+div p {
+  line-height: 1.6; /* Controla la altura de línea para mejorar la legibilidad */
+}
+
+div li {
+  line-height: 1.6; /* Controla la altura de línea en los elementos de la lista */
+}
+
+/* DIVS PRINCIPALES INDEX.HTML  */
+
+.container {
+  display: flex; /* Utilizamos flexbox */
+  height: 70%; /* Hacemos que la altura sea del 100% del viewport */
+  border: 1px solid black;
+}
+
+.somos,
+.racing {
+  padding: 10px;
+  flex: 1;
+  text-align: justify;
+  font-size: 17px;
+}
+
+.porque {
+  width: 75%;
+  display: inline-block;
+  text-align: justify;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.racing,
+.porque,
+.somos {
+  height: fit-content;
+}
+
+/* MAPA */
+
+#mapa {
+  width: 70%;
+  height: 70vh;
+  border: 0px;
+}
+
+/* FIELD SET CONTACTO */
+#fieldset {
+  margin-top: 10px;
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#legend {
+  width: auto;
+  padding: 0 5px;
+  font-size: 18px;
+}
+
+/* FORMULARIO */
+#textarea {
+  margin-top: 5px;
+  width: 75%;
+  height: 120px;
+  padding: 7px 7px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+form {
+  font-size: 18px;
+}
+
+#correo {
+  width: 180px;
+}
